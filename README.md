@@ -1,24 +1,24 @@
-# Task Helper for Jira
+# Handshake Comment Helper
 
-A Chrome extension scaffold that analyzes Jira issue pages, highlights missing information, suggests labels, and provides quick reply templates.
+A Chrome Extension that analyzes Jira issues and generates a professional developer "handshake" comment in seconds.
 
 ## Features
 
-- Parses Jira issue summary and description.
-- Detects missing reproduction steps, expected behavior, environment links, platform scope, and partner credentials.
-- Shows warning messages and a copy-ready checklist overlay.
-- Suggests labels for `WebSDK`, and `Campaign` based on issue content.
-- Includes a popup with quick reply templates and a simple technical English helper.
+* **Auto-Extract:** Reads Jira descriptions and comments automatically.
+* **Instant Summary:** Turkish summary for you, English action for the ticket.
+* **Pro Handshake:** Generates "I will..." statements ready for Jira.
+* **Ultra Fast:** Powered by **Groq (Llama 3.3-70B)** for instant results.
 
-## Install locally
+## Quick Start
 
-1. Open Chrome and go to `chrome://extensions`.
-2. Enable `Developer mode`.
-3. Click `Load unpacked`.
-4. Select the `groom-helper` folder.
+1. Load as an "unpacked" extension in `chrome://extensions/`.
+2. Add your [Groq API Key](https://console.groq.com/keys).
+3. Click **Analyze** on any Jira page.
+4. Copy the handshake and paste it as a comment!
 
-## Usage
+## Tech
 
-- Open a Jira issue page.
-- The extension injects a floating panel with analysis and checklist items.
-- Use the popup to copy ready-made reply templates or improve short text snippets.
+* **Stack:** JS (MV3), HTML, CSS.
+* **AI:** Groq API.
+
+**Read less, code more.** 🚀
