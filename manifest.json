@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Task Helper - Jira Analizi",
+  "description": "Jira görevinin açıklaması ve yorumlarını okuyup AI ile analiz eder. Ne isteniyor ve ne yapmalıyız özetini verir.",
+  "version": "1.0.0",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.atlassian.net/*",
+        "*://jira.com/*",
+        "*://*.jira.com/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}

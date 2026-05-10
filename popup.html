@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Task Helper</title>
+        <link rel="stylesheet" href="styles.css" />
+        </head>
+    <body>
+        <div class="popup-shell">
+            <h1>🔍 Task Helper</h1>
+            
+            <div class="section">
+                <h2>API Ayarı</h2>
+                <input type="password" id="api-key" placeholder="API Key'inizi yapıştırın..." />
+                <button id="save-key">Kaydet</button>
+                <small id="key-status"></small>
+            </div>
+
+            <div class="section">
+                <button id="analyze-btn" class="primary-btn">📊 Analiz Et</button>
+                <div id="loading" style="display:none; text-align:center; margin:10px 0;">
+                    <p>⏳ Analiz yapılıyor...</p>
+                </div>
+            </div>
+
+            <div id="result" style="display:none;" class="section">
+                <div class="result-box">
+                    <h3>🎯 Ne İsteniyor?</h3>
+                    <p id="what-text"></p>
+                </div>
+                <div class="result-box">
+                    <h3>💻 Yapılacak</h3>
+                    <p id="dev-text"></p>
+                </div>
+                <button id="copy-result">📋 Sonucu Kopyala</button>
+            </div>
+
+            <div id="no-result" style="display:block;">
+                <p style="color: #999; font-size: 12px;">Analiz yapılmadı. "Analiz Et" butonuna basın.</p>
+            </div>
+        </div>
+        <script src="popup.js"></script>
+    </body>
+</html>
